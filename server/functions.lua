@@ -38,6 +38,7 @@ end
 
 ESX.SavePlayer = function(xPlayer, cb)
 	local asyncTasks = {}
+	xPlayer.updateCoords(coords)
 	xPlayer.setLastPosition(xPlayer.getCoords())
 
 	-- User accounts
